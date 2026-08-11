@@ -1,0 +1,73 @@
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Aug 10 17:23:42 2026
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   superstore_load.ctl
+Data File:      ../data/superstore_cleaned.csv
+  Bad File:     superstore_cleaned.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table RETAIL_SALES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ROW_ID                              FIRST     *   ,  O(") CHARACTER            
+ORDER_ID                             NEXT     *   ,  O(") CHARACTER            
+ORDER_DATE                           NEXT     *   ,  O(") DATE YYYY-MM-DD      
+SHIP_DATE                            NEXT     *   ,  O(") DATE YYYY-MM-DD      
+SHIP_MODE                            NEXT     *   ,  O(") CHARACTER            
+CUSTOMER_ID                          NEXT     *   ,  O(") CHARACTER            
+CUSTOMER_NAME                        NEXT     *   ,  O(") CHARACTER            
+SEGMENT                              NEXT     *   ,  O(") CHARACTER            
+COUNTRY                              NEXT     *   ,  O(") CHARACTER            
+CITY                                 NEXT     *   ,  O(") CHARACTER            
+STATE                                NEXT     *   ,  O(") CHARACTER            
+POSTAL_CODE                          NEXT     *   ,  O(") CHARACTER            
+REGION                               NEXT     *   ,  O(") CHARACTER            
+PRODUCT_ID                           NEXT     *   ,  O(") CHARACTER            
+CATEGORY                             NEXT     *   ,  O(") CHARACTER            
+SUB_CATEGORY                         NEXT     *   ,  O(") CHARACTER            
+PRODUCT_NAME                         NEXT     *   ,  O(") CHARACTER            
+SALES                                NEXT     *   ,  O(") CHARACTER            
+QUANTITY                             NEXT     *   ,  O(") CHARACTER            
+DISCOUNT                             NEXT     *   ,  O(") CHARACTER            
+PROFIT                               NEXT     *   ,  O(") CHARACTER            
+ORDER_YEAR                           NEXT     *   ,  O(") CHARACTER            
+ORDER_MONTH                          NEXT     *   ,  O(") CHARACTER            
+ORDER_MONTH_NAME                     NEXT     *   ,  O(") CHARACTER            
+PROFIT_MARGIN                        NEXT     *   ,  O(") CHARACTER            
+
+value used for ROWS parameter changed from 64 to 39
+
+Table RETAIL_SALES:
+  9994 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 251550 bytes(39 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:          9994
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Mon Aug 10 17:23:42 2026
+Run ended on Mon Aug 10 17:23:50 2026
+
+Elapsed time was:     00:00:07.44
+CPU time was:         00:00:00.20
